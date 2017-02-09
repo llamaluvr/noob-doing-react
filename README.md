@@ -25,7 +25,7 @@ Then, to build to the build folder, run:
 webpack
 ```
 
-To build and keep building to the build folder, run `webpack --watch`.
+To build and keep building to the build folder, run `webpack --watch`. Obviously, make sure you're serving the build folder somehow.
 
 To run unit tests, run `npm run test`.
 
