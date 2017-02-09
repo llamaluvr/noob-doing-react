@@ -1,4 +1,4 @@
-# A demo of using ES6/ Webpack/ React in a way that's friendly to people that just want to dip their toes in
+# A demo of using ES6/ Webpack/ React that is hopefully really simple and pretty flexible
 
 This was inspired by/ forked from Cory House's [Build a JS Dev Environment in 1 Hour](https://www.codemash.org/session/build-a-javascript-dev-environment-in-1-hour/), Matthew LaForest's, [Integrating React into a legacy web app](https://www.codemash.org/session/integrating-react-into-a-legacy-web-app/), and my own interest in using React in various places. 
 
