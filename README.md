@@ -1,19 +1,17 @@
-# A demo of using ES6/ Webpack/ React in a way that's friendly to doing it inside of another non-Webpack/ ES6/ React application
+# A demo of using ES6/ Webpack/ React in a way that's friendly to people that just want to dip their toes in
 
-This was inspired by/ forked from Cory House's [Build a JS Dev Environment in 1 Hour](https://www.codemash.org/session/build-a-javascript-dev-environment-in-1-hour/), Matthew LaForest's, [Integrating React into a legacy web app](https://www.codemash.org/session/integrating-react-into-a-legacy-web-app/), and my own interest in using React in various places.
+This was inspired by/ forked from Cory House's [Build a JS Dev Environment in 1 Hour](https://www.codemash.org/session/build-a-javascript-dev-environment-in-1-hour/), Matthew LaForest's, [Integrating React into a legacy web app](https://www.codemash.org/session/integrating-react-into-a-legacy-web-app/), and my own interest in using React in various places. 
 
-##The big idea
+##What I'm working on here
 
-- You've got an app that's not using React or Webpack and you want to start using it in just one part of the app without disturbing other stuff.
-- Everything in the enclave is coded in ES6/ JSX.
-- Everything in the enclave is bundled (JS and CSS).
-- There's not a ton of other strange new stuff going on other than React and ES6.
-- At the end of the day, the bundled stuff is copied to a folder where it can be dealt with easily by another build process.
+- Intentionally limiting the other strange new stuff going on here to just Webpack, React, and ES6.
+- But you are using ES6, JSX, all of that's getting bundled, so you feel really cutting edge.
+- At the end of the day, the bundled stuff is copied to a folder where it can be served or maybe copied and used inside of another app. I wanted it to just be really obvious and self-contained ("HERE IS THE FINAL PRODUCT").
 - JSX is automatically getting transpiled in the background as you change it so you can just refresh your browser to test new code.
-- BUT, it's not hot-reloading as you change stuff, in case your app already being served by another web server. The hot-reloading stuff uses its own web server, generally. I've read that using another web server is possible, but let's keep things easy for now. If the enclave is just one part of my app, serving it on its own for the sake of hot reloading may not even make much sense.
+- BUT, it's not hot-reloading as you change stuff. I love hot-reloading, but maybe this is just part of one app that's already being served from somewhere else. I've read it's possible to use hot-reloading with another web server but let's do that later. I just wanted to pull that all apart and get to a point where I was testing and linting and keeping files up-to-date without necessarily hot-reloading. I hope to add it back later.
 
 ##What I changed from the original demo
-- No more hot reloading
+- Not hot reloading right now
 - Added CSS bundling
 - Added copying index.html to the build folder
 - Added React/ JSX
