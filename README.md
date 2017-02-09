@@ -34,15 +34,23 @@ To build and keep building to the build folder, run `webpack --watch`. Obviously
 
 To run unit tests, run `npm run test`.
 
+##Probably obvious stuff to you that I'm still getting used to
+- All web development packages are installed via npm. See package.json (devDependencies). These things get included in the bundle based on them being imported into index.jsx or its descendents.
+- All the magic is defined in webpack.config.js. This sets what should get considered for bundling, what to transpile, and where to put it. Also sets up sourcemapping.
+- Even CSS has to be imported into the JS files. Basically, these references cause webpack to actually bundle those particular CSS files. It bundles whatever it sees the JS referencing.
+- To repeat: If something is refernced by index.jsx directly or indirectly, it's in the bundle. If it's not, it's not. That's why it's the "entry" point.
+
 ##TODO
 
 - There's a ton of dependencies that aren't needed but are still there
 - It should minify the JS/ CSS.
 - I think I took out the linting.
 - I'd like to write up how to run all the commands at once, so you can run one command and get JIT transpiling, linting, unit tests running and live updating, etc. all at once.
+- dev/ prod branching
 
 ##Interesting bits
 - Most tutorials assume you want to hot reload so it wasn't obvious initially how to just keep the build folder up-to-date so something else could serve it. It'd be nice to do this with something other than the webpack --watch command, so then you wouldn't need that separate global install.
+- Bundle.js is massive right now because of the source mapping. It's not prod-level source mapping.
 
 ## More Info and Inspiration
 - [Codemash Talk Slides](https://www.dropbox.com/s/utvgg07ib25dq4x/Build%20a%20JS%20Dev%20Env%20in%201%20Hr%20-%20Codemash.pptx?dl=0)
