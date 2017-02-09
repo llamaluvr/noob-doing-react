@@ -10,7 +10,7 @@ This was inspired by/ forked from Cory House's [Build a JS Dev Environment in 1 
 - There's not a ton of other strange new stuff going on other than React and ES6.
 - At the end of the day, the bundled stuff is copied to a folder where it can be dealt with easily by another build process.
 - JSX is automatically getting transpiled in the background as you change it so you can just refresh your browser to test new code.
-- BUT, it's not hot-reloading as you change stuff, in case your app already being served by another web server. The hot-reloading stuff uses its own web server, generally. I've read that using another web server is possible, let's keep things easy for now. If the enclave is just one part of my app, serving it on its own for the sake of hot reloading may not make a lot of sense.
+- BUT, it's not hot-reloading as you change stuff, in case your app already being served by another web server. The hot-reloading stuff uses its own web server, generally. I've read that using another web server is possible, but let's keep things easy for now. If the enclave is just one part of my app, serving it on its own for the sake of hot reloading may not even make much sense.
 
 ##What I changed from the original demo
 - No more hot reloading
