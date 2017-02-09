@@ -39,7 +39,7 @@ To run unit tests, run `npm run test`.
 ##TODO
 
 - There's a ton of dependencies that aren't needed but are still there
-- It should minify the CSS.
+- It should minify the JS/ CSS.
 - I think I took out the linting.
 - I'd like to write up how to run all the commands at once, so you can run one command and get JIT transpiling, linting, unit tests running and live updating, etc. all at once.
 
