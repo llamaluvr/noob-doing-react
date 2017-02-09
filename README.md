@@ -1,6 +1,6 @@
 # An ES6/ React Enclave for a Legacy Web App
 
-This was inspired by Cory House's [Build a JS Dev Environment in 1 Hour](https://www.codemash.org/session/build-a-javascript-dev-environment-in-1-hour/), Matthew LaForest's, [Integrating React into a legacy web app](https://www.codemash.org/session/integrating-react-into-a-legacy-web-app/), my own interest in using React, and a need to carve out a spot in an app I work on to use cutting edge stuff without disrupting everything else.
+This was inspired by/ forked from Cory House's [Build a JS Dev Environment in 1 Hour](https://www.codemash.org/session/build-a-javascript-dev-environment-in-1-hour/), Matthew LaForest's, [Integrating React into a legacy web app](https://www.codemash.org/session/integrating-react-into-a-legacy-web-app/), my own interest in using React, and a need to carve out a spot in an app I work on to use cutting edge stuff without disrupting everything else.
 
 "Legacy app" has a connotation of something unsupported and really old that you can't stand to work on. Here, it just means something big that's used a lot and has been around for a while that you're not about to completely rewrite. Obviously you're trying to add new stuff to it if you're interested in something like this. You must love it at least a little bit ;-).
 
@@ -35,10 +35,6 @@ To run unit tests, run `npm run test`.
 - It should minify the CSS.
 - I think I took out the linting.
 - I'd like to write up how to run all the commands at once, so you can run one command and get JIT transpiling, linting, unit tests running and live updating, etc. all at once.
-
-## Forked from Build a JS Dev Environment in 1 Hour
-
-This repository shows the finished product of the JS Development Environment I built in ~~1 hour~~ 30 minutes at Codemash 2017. 
 
 ## More Info and Inspiration
 - [Codemash Talk Slides](https://www.dropbox.com/s/utvgg07ib25dq4x/Build%20a%20JS%20Dev%20Env%20in%201%20Hr%20-%20Codemash.pptx?dl=0)
