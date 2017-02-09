@@ -3,8 +3,6 @@
   "version": "1.0.0",
   "description": "JS Dev Environment",
   "scripts": {
-    "start": "npm-run-all --parallel open test",
-    "open": "node tools/srcServer.js",
     "test": "jest --watch",
     "build": "webpack"
   },
