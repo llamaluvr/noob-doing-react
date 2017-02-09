@@ -36,6 +36,9 @@ To run unit tests, run `npm run test`.
 - I think I took out the linting.
 - I'd like to write up how to run all the commands at once, so you can run one command and get JIT transpiling, linting, unit tests running and live updating, etc. all at once.
 
+##Interesting bits
+- Most tutorials assume you want to hot reload so it wasn't obvious initially how to just keep the build folder up-to-date so something else could serve it. It'd be nice to do this with something other than the webpack --watch command, so then you wouldn't need that separate global install.
+
 ## More Info and Inspiration
 - [Codemash Talk Slides](https://www.dropbox.com/s/utvgg07ib25dq4x/Build%20a%20JS%20Dev%20Env%20in%201%20Hr%20-%20Codemash.pptx?dl=0)
 - [Building a JavaScript Development Environment on Pluralsight](https://app.pluralsight.com/library/courses/javascript-development-environment/table-of-contents) 
