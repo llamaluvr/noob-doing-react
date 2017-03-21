@@ -2,7 +2,7 @@
 
 This was inspired by/ forked from Cory House's [Build a JS Dev Environment in 1 Hour](https://www.codemash.org/session/build-a-javascript-dev-environment-in-1-hour/), Matthew LaForest's, [Integrating React into a legacy web app](https://www.codemash.org/session/integrating-react-into-a-legacy-web-app/), and my own interest in using React in various places. 
 
-##What I'm working on here
+## What I'm working on here
 
 - Intentionally limiting the other strange new stuff going on here to just Webpack, React, and ES6.
 - But you are using ES6, JSX, all of that's getting bundled, so you feel really cutting edge.
@@ -10,14 +10,14 @@ This was inspired by/ forked from Cory House's [Build a JS Dev Environment in 1 
 - JSX is automatically getting transpiled in the background as you change it so you can just refresh your browser to test new code.
 - BUT, it's not hot-reloading as you change stuff. I love hot-reloading, but maybe this is just part of one app that's already being served from somewhere else. I've read it's possible to use hot-reloading with another web server but let's do that later. I just wanted to pull that all apart and get to a point where I was testing and linting and keeping files up-to-date without necessarily hot-reloading. I hope to add it back later.
 
-##What I changed from the original demo
+## What I changed from the original demo
 - Not hot reloading right now
 - Added CSS bundling
 - Added copying index.html to the build folder
 - Added React/ JSX
 - Added onto the import/ export example so I could prove I was doing it right since I'm new to ES6
 
-##How to use 
+## How to use 
 
 After cloning, run
 ```
@@ -34,21 +34,23 @@ To build and keep building to the build folder, run `webpack --watch`. Obviously
 
 To run unit tests, run `npm run test`.
 
-##Probably obvious stuff to you that I'm still getting used to
+## Probably obvious stuff to you that I'm still getting used to
 - All web development packages are installed via npm. See package.json (devDependencies). These things get included in the bundle based on them being imported into index.jsx or its descendents.
 - All the magic is defined in webpack.config.js. This sets what should get considered for bundling, what to transpile, and where to put it. Also sets up sourcemapping.
 - Even CSS has to be imported into the JS files. Basically, these references cause webpack to actually bundle those particular CSS files. It bundles whatever it sees the JS referencing.
 - To repeat: If something is refernced by index.jsx directly or indirectly, it's in the bundle. If it's not, it's not. That's why it's the "entry" point.
 
-##TODO
+## TODO
 
 - There's a ton of dependencies that aren't needed but are still there
 - It should minify the JS/ CSS.
 - I think I took out the linting.
 - I'd like to write up how to run all the commands at once, so you can run one command and get JIT transpiling, linting, unit tests running and live updating, etc. all at once.
 - dev/ prod branching
+- let's add a react-router example. How could you not be using react-router?
+- make the commands into npm commands now that I actually understand that
 
-##Interesting bits
+## Interesting bits
 - Most tutorials assume you want to hot reload so it wasn't obvious initially how to just keep the build folder up-to-date so something else could serve it. It'd be nice to do this with something other than the webpack --watch command, so then you wouldn't need that separate global install.
 - Bundle.js is massive right now because of the source mapping. It's not prod-level source mapping.
 
